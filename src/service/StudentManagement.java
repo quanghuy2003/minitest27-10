@@ -65,4 +65,14 @@ public class StudentManagement implements Manage<Student> {
     public void sort() {
         listStudent.sort(Comparator.comparingDouble(Student::mediumScore));
     }
+    public void biggestPoint(){
+        double max = 0;
+        int index = 0;
+        for (int i = 0; i < listStudent.size(); i++) {
+            if (max < listStudent.get(i).mediumScore()) {
+                index = i;
+            }
+        }
+        System.out.println(listStudent.get(index));
+    }
 }

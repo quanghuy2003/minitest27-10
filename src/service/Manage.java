@@ -12,4 +12,6 @@ public interface Manage <T>{
     void print();
 
     void sort();
+
+    void biggestPoint();
 }
